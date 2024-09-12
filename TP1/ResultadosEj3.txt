@@ -1,0 +1,40 @@
+Iteración 10^1
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+
+Iteración 10^2
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 2
+Tiempo en ms: 1
+
+Iteración 10^3
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+
+Iteración 10^4
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+Tiempo en ms: 1
+
+Iteración 10^5
+Tiempo en ms: 4
+Tiempo en ms: 2
+Tiempo en ms: 4
+Tiempo en ms: 3
+Tiempo en ms: 3
+
+Promedio de tiempo para 10^1: 1.00 ms
+Promedio de tiempo para 10^2: 1.20 ms
+Promedio de tiempo para 10^3: 1.00 ms
+Promedio de tiempo para 10^4: 1.00 ms
+Promedio de tiempo para 10^5: 3.20 ms
