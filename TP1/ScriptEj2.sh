@@ -12,11 +12,11 @@ for i in {1..6}
 do
   echo "Iteración 10^$i"
 
-port=$((8080 + i))
+  port=$((8080 + i))
   java Ej2_Servidor $port $param &   # El ampersand (&) permite ejecutar el servidor en segundo plano
 
   # Esperar unos segundos para asegurarse de que el servidor esté listo
-  #sleep 2
+  sleep 2
 
   java Ej2_Cliente 127.0.0.1 $port $param
 

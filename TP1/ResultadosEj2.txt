@@ -19,7 +19,10 @@ El mensaje pesa: 10000
 El primer caracter es: F y el ultimo: F
 
 Iteración 10^5
-Error en el socket El buffer pesa
+El buffer pesa: 100000
+El mensaje pesa: 100000
+El primer caracter es: F y el ultimo: F
+
 Iteración 10^6
 El buffer pesa: 1000000
 El mensaje pesa: 131071

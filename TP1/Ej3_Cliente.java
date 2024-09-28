@@ -33,7 +33,6 @@ public class Ej3_Cliente {
         // Obtener entrada del usuario
         //Console console = System.console();
         //String inputline = console.readLine("Por favor, ingrese el mensaje: ");
-        // Crear un string de x caracteres 'A' (cada uno de 1 byte en UTF-8)
         byte[] bytes = new byte[Integer.valueOf(args[2])];
         for (int i = 0; i < bytes.length; i++) {
             bytes[i] = 'A'; // El carácter 'A' en UTF-8 ocupa 1 byte
