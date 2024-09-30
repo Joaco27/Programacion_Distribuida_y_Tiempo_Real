@@ -1,0 +1,79 @@
+
+Tamaño de mensaje: 10 bytes
+Iteración 1: ERROR conectando ms
+Iteración 2: ERROR conectando ms
+Iteración 3: ERROR conectando ms
+Iteración 4: ERROR conectando ms
+Iteración 5: ERROR conectando ms
+Iteración 6: ERROR conectando ms
+Iteración 7: ERROR conectando ms
+Iteración 8: ERROR conectando ms
+Iteración 9: ERROR conectando ms
+Iteración 10: ERROR conectando ms
+Promedio de tiempo para 10 bytes: 0.00 ms
+------------------------------------------
+Tamaño de mensaje: 100 bytes
+Iteración 1: ERROR conectando ms
+Iteración 2: ERROR conectando ms
+Iteración 3: ERROR conectando ms
+Iteración 4: ERROR conectando ms
+Iteración 5: ERROR conectando ms
+Iteración 6: ERROR conectando ms
+Iteración 7: ERROR conectando ms
+Iteración 8: ERROR conectando ms
+Iteración 9: ERROR conectando ms
+Iteración 10: ERROR conectando ms
+Promedio de tiempo para 100 bytes: 0.00 ms
+------------------------------------------
+Tamaño de mensaje: 1000 bytes
+Iteración 1: ERROR conectando ms
+Iteración 2: ERROR conectando ms
+Iteración 3: ERROR conectando ms
+Iteración 4: ERROR conectando ms
+Iteración 5: ERROR conectando ms
+Iteración 6: ERROR conectando ms
+Iteración 7: ERROR conectando ms
+Iteración 8: ERROR conectando ms
+Iteración 9: ERROR conectando ms
+Iteración 10: ERROR conectando ms
+Promedio de tiempo para 1000 bytes: 0.00 ms
+------------------------------------------
+Tamaño de mensaje: 10000 bytes
+Iteración 1: ERROR conectando ms
+Iteración 2: ERROR conectando ms
+Iteración 3: ERROR conectando ms
+Iteración 4: ERROR conectando ms
+Iteración 5: ERROR conectando ms
+Iteración 6: ERROR conectando ms
+Iteración 7: ERROR conectando ms
+Iteración 8: ERROR conectando ms
+Iteración 9: ERROR conectando ms
+Iteración 10: ERROR conectando ms
+Promedio de tiempo para 10000 bytes: 0.00 ms
+------------------------------------------
+Tamaño de mensaje: 100000 bytes
+Iteración 1: ERROR conectando ms
+Iteración 2: ERROR conectando ms
+Iteración 3: ERROR conectando ms
+Iteración 4: ERROR conectando ms
+Iteración 5: ERROR conectando ms
+Iteración 6: ERROR conectando ms
+Iteración 7: ERROR conectando ms
+Iteración 8: ERROR conectando ms
+Iteración 9: ERROR conectando ms
+Iteración 10: ERROR conectando ms
+Promedio de tiempo para 100000 bytes: 0.00 ms
+------------------------------------------
+Tamaño de mensaje: 1000000 bytes
+Iteración 1: ERROR conectando ms
+Iteración 2: ERROR conectando ms
+Iteración 3: ERROR conectando ms
+Iteración 4: ERROR conectando ms
+Iteración 5: ERROR conectando ms
+Iteración 6: ERROR conectando ms
+Iteración 7: ERROR conectando ms
+Iteración 8: ERROR conectando ms
+Iteración 9: ERROR conectando ms
+Iteración 10: ERROR conectando ms
+Promedio de tiempo para 1000000 bytes: 0.00 ms
+------------------------------------------
