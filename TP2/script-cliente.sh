@@ -24,6 +24,7 @@ do
         tiempo=$(java Ej3_Cliente $IP_SERVIDOR $PUERTO $i)
         echo "Iteración $j: $tiempo ms" >> $ARCHIVO_SALIDA
         total_tiempo=$(awk "BEGIN {print $total_tiempo+$tiempo}")
+        PUERTO=$((PUERTO+1))
         sleep 3
     done
 

@@ -1,79 +1,50 @@
 
 Tamaño de mensaje: 10 bytes
-Iteración 1: 19 ms
-Iteración 2: 60 ms
-Iteración 3: 283 ms
-Iteración 4: 155 ms
-Iteración 5: 973 ms
-Iteración 6: 462 ms
-Iteración 7: 123 ms
-Iteración 8: 217 ms
-Iteración 9: 82 ms
-Iteración 10: 90 ms
-Promedio de tiempo para 10 bytes: 246.40 ms
+Iteración 1: 365 ms
+Iteración 2: 356 ms
+Iteración 3: 28 ms
+Iteración 4: 93 ms
+Iteración 5: 83 ms
+Iteración 6: 191 ms
+Iteración 7: 49 ms
+Iteración 8: 228 ms
+Iteración 9: 217 ms
+Iteración 10: 590 ms
+Promedio de tiempo para 10 bytes: 220.00 ms
 ------------------------------------------
 Tamaño de mensaje: 100 bytes
-Iteración 1: 53 ms
-Iteración 2: 16 ms
-Iteración 3: 118 ms
-Iteración 4: 1232 ms
-Iteración 5: 500 ms
-Iteración 6: 374 ms
-Iteración 7: 45 ms
-Iteración 8: 382 ms
-Iteración 9: 113 ms
-Iteración 10: 453 ms
-Promedio de tiempo para 100 bytes: 328.60 ms
+Iteración 1: 574 ms
+Iteración 2: 924 ms
+Iteración 3: 367 ms
+Iteración 4: 311 ms
+Iteración 5: 478 ms
+Iteración 6: 167 ms
+Iteración 7: 67 ms
+Iteración 8: 604 ms
+Iteración 9: 779 ms
+Iteración 10:  ms
+Promedio de tiempo para 100 bytes:  ms
 ------------------------------------------
 Tamaño de mensaje: 1000 bytes
-Iteración 1: 215 ms
-Iteración 2: 73 ms
-Iteración 3: 704 ms
-Iteración 4: 100 ms
-Iteración 5: 208 ms
-Iteración 6: 279 ms
-Iteración 7: 83 ms
-Iteración 8: 187 ms
-Iteración 9: 1120 ms
-Iteración 10: 197 ms
-Promedio de tiempo para 1000 bytes: 316.60 ms
+Iteración 1: 444 ms
+Iteración 2: 22 ms
+Iteración 3: 402 ms
+Iteración 4: 120 ms
+Iteración 5: 20 ms
+Iteración 6: 119 ms
+Iteración 7: 384 ms
+Iteración 8: 96 ms
+Iteración 9: 921 ms
+Iteración 10: 232 ms
+Promedio de tiempo para 1000 bytes: 276.00 ms
 ------------------------------------------
 Tamaño de mensaje: 10000 bytes
-Iteración 1: 115 ms
-Iteración 2: 62 ms
-Iteración 3: 254 ms
-Iteración 4: 133 ms
-Iteración 5: 222 ms
-Iteración 6: 152 ms
-Iteración 7:  ms
-Iteración 8: 195 ms
-Iteración 9: 84 ms
-Iteración 10: 142 ms
-Promedio de tiempo para 10000 bytes: 42.10 ms
-------------------------------------------
-Tamaño de mensaje: 100000 bytes
-Iteración 1: 88 ms
-Iteración 2: 148 ms
-Iteración 3: 263 ms
-Iteración 4: 100 ms
-Iteración 5: 372 ms
-Iteración 6: 214 ms
-Iteración 7: 306 ms
-Iteración 8:  ms
-Iteración 9: 73 ms
-Iteración 10: 93 ms
-Promedio de tiempo para 100000 bytes: 16.60 ms
-------------------------------------------
-Tamaño de mensaje: 1000000 bytes
-Iteración 1:  ms
-Iteración 2:  ms
-Iteración 3:  ms
-Iteración 4:  ms
-Iteración 5:  ms
+Iteración 1: 151 ms
+Iteración 2: 502 ms
+Iteración 3: 348 ms
+Iteración 4: 271 ms
+Iteración 5: 401 ms
 Iteración 6:  ms
-Iteración 7:  ms
-Iteración 8:  ms
-Iteración 9:  ms
-Iteración 10:  ms
-Promedio de tiempo para 1000000 bytes:  ms
-------------------------------------------
+Iteración 7: 523 ms
+Iteración 8: 106 ms
+Iteración 9: 225 ms
