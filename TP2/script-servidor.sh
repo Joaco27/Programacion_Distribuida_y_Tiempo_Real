@@ -1,22 +1,26 @@
 #!/bin/bash
 
-# Puerto en el que escuchará el servidor
 PUERTO=8080
-
-# Abrir el puerto en iptables (requiere permisos de superusuario)
-if ! sudo iptables -L INPUT -n | grep -q ":$PUERTO"; then
-    echo "Abriendo el puerto $PUERTO..."
-    sudo iptables -A INPUT -p tcp --dport $PUERTO -j ACCEPT
-    echo "Puerto $PUERTO abierto."
-else
-    echo "El puerto $PUERTO ya está abierto."
-fi
-
-# Compilar el servidor Java
+LENGTH = 10
 javac Ej3_Servidor.java
 
-# Ejecutar el servidor en un bucle para aceptar múltiples conexiones
-while true; do
-    echo "Esperando conexiones en el puerto $PUERTO..."
-    java Ej3_Servidor
+for i in {1..5}
+do
+    for j in {1..10}
+    do
+        echo "Abriendo puerto $PUERTO..."
+
+        # Abrir puerto en el firewall de Windows usando PowerShell
+        powershell.exe -Command "New-NetFirewallRule -DisplayName 'Abrir Puerto $PUERTO' -Direction Inbound -LocalPort $PUERTO -Protocol TCP -Action Allow"
+
+        # Compilar y ejecutar el servidor Java
+        echo "Ejecutando el servidor en el puerto $PUERTO..."
+        java Ej3_Servidor $PUERTO $LENGTH
+
+        # Incrementar el puerto
+        PUERTO=$((PUERTO+1))
+        
+    done
+    LENGTH = $((LENGTH*10))
 done
+
