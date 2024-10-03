@@ -1,0 +1,35 @@
+Tamaño de Mensaje: 10 bytes
+El mensaje 1 tardo 14 ms
+El mensaje 2 tardo 2 ms
+El mensaje 3 tardo 2 ms
+El mensaje 4 tardo 2 ms
+El mensaje 5 tardo 2 ms
+El promedio de tiempo es 4 ms
+Tamaño de Mensaje: 100 bytes
+El mensaje 1 tardo 2 ms
+El mensaje 2 tardo 2 ms
+El mensaje 3 tardo 3 ms
+El mensaje 4 tardo 2 ms
+El mensaje 5 tardo 2 ms
+El promedio de tiempo es 2 ms
+Tamaño de Mensaje: 1000 bytes
+El mensaje 1 tardo 1 ms
+El mensaje 2 tardo 2 ms
+El mensaje 3 tardo 2 ms
+El mensaje 4 tardo 2 ms
+El mensaje 5 tardo 2 ms
+El promedio de tiempo es 1 ms
+Tamaño de Mensaje: 10000 bytes
+El mensaje 1 tardo 2 ms
+El mensaje 2 tardo 3 ms
+El mensaje 3 tardo 2 ms
+El mensaje 4 tardo 3 ms
+El mensaje 5 tardo 2 ms
+El promedio de tiempo es 2 ms
+Tamaño de Mensaje: 100000 bytes
+El mensaje 1 tardo 4 ms
+El mensaje 2 tardo 4 ms
+El mensaje 3 tardo 4 ms
+El mensaje 4 tardo 4 ms
+El mensaje 5 tardo 3 ms
+El promedio de tiempo es 3 ms

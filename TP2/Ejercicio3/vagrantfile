@@ -1,0 +1,36 @@
+# base_network = "192.168.56."
+# base_host = 100
+
+Vagrant.configure("2") do |config|
+  # Configuración de la VM servidor
+  config.vm.define "servidor" do |servidor|
+    servidor.vm.box = "alvistack/ubuntu-24.04"
+
+    # Configura la red interna
+    servidor.vm.network "public_network", ip: "192.168.56.100"
+
+    # Provisionamiento de la VM servidor
+    servidor.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install -y build-essential libc-dev-bin
+      grep -q "alias ls='ls -la'" /home/vagrant/.bashrc || echo -e "\\nalias ls='ls -la'" >> /home/vagrant/.bashrc
+      apt install default-jre default-jdk
+      SHELL
+  end
+
+  # Configuración de la VM cliente
+  config.vm.define "cliente" do |cliente|
+    cliente.vm.box = "alvistack/ubuntu-24.04"
+
+    # Configura la red interna
+    cliente.vm.network "public_network", ip: "192.168.56.101"
+
+    # Provisionamiento de la VM cliente
+    cliente.vm.provision "shell", inline: <<-SHELL
+      apt-get update
+      apt-get install -y build-essential libc-dev-bin
+      grep -q "alias ls='ls -la'" /home/vagrant/.bashrc || echo -e "\\nalias ls='ls -la'" >> /home/vagrant/.bashrc
+      apt install default-jre default-jdk
+      SHELL
+  end
+end
