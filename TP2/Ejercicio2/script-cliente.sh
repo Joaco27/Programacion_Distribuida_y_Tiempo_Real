@@ -1,27 +1,28 @@
 #!/bin/bash
 
 # IP del servidor
-IP_SERVIDOR="163.10.141.215"
+IP_SERVIDOR="163.10.141.100"
 PUERTO="8080"
+LENGTH=10
 
 # Compilar el cliente Java
-javac Ej3_Cliente.java
+javac ClienteModificado.java
 
 # Archivo de salida
-ARCHIVO_SALIDA="TP2ejercicio2"
+ARCHIVO_SALIDA="TP2ejercicio2.txt"
 echo "" > $ARCHIVO_SALIDA  # Limpiar el contenido previo del archivo
 
 # Rango de tamaños de mensaje
-for (( i=10; i<=100000; i*=10 ))
+for i in {1..6}
 do
     total_tiempo=0
 
-    echo "Tamaño de mensaje: $i bytes" >> $ARCHIVO_SALIDA
+    echo "Tamaño de mensaje: $LENGTH bytes" >> $ARCHIVO_SALIDA
     
     # Ejecutar 10 veces para calcular el promedio
-    for (( j=1; j<=10; j++ ))
+    for j in {1..10}
     do
-        tiempo=$(java Ej3_Cliente $IP_SERVIDOR $PUERTO $i)
+        tiempo=$(java ClienteModificado $IP_SERVIDOR $PUERTO $LENGTH)
         echo "Iteración $j: $tiempo ms" >> $ARCHIVO_SALIDA
         total_tiempo=$(awk "BEGIN {print $total_tiempo+$tiempo}")
         PUERTO=$((PUERTO+1))
@@ -30,6 +31,8 @@ do
 
     # Calcular el promedio
     promedio=$(awk "BEGIN {printf \"%.2f\", $total_tiempo/10}")
-    echo "Promedio de tiempo para $i bytes: $promedio ms" >> $ARCHIVO_SALIDA
+    echo "Promedio de tiempo para $LENGTH bytes: $promedio ms" >> $ARCHIVO_SALIDA
     echo "------------------------------------------" >> $ARCHIVO_SALIDA
+
+    LENGTH=$((LENGTH*10))
 done
