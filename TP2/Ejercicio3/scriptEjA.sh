@@ -4,8 +4,8 @@
 server_ip="192.168.56.100"
 client_ip="192.168.56.101"
 
-vagrant halt
-sleep 10
+# vagrant halt
+# sleep 10
 vagrant up
 sleep 10
 

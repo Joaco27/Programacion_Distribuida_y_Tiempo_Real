@@ -7,7 +7,7 @@ javac Ej2_Cliente.java
 # Valor inicial del parámetro
 param=10
 
-# Iterar 7 veces
+# Iterar 6 veces
 for i in {1..6}
 do
   echo "Iteración 10^$i"

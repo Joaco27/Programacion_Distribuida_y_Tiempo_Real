@@ -2,7 +2,17 @@
 import java.io.*;
 import java.net.*;
 
+
 public class ClienteModificado {
+    // Calcular el checksum (suma de bytes)
+    public static int calcularChecksum(byte[] data) {
+        int checksum = 0;
+        for (byte b : data) {
+            checksum += (b & 0xFF);
+        }
+        return checksum;
+    }
+
     public static void main(String[] args) throws IOException {
         // Verificar la cantidad de parámetros de la línea de comandos
         if (args.length != 3) {
@@ -36,10 +46,13 @@ public class ClienteModificado {
             buffer[i] = 'A'; // El carácter 'A' en UTF-8 ocupa 1 byte
         }
 
+        int checksum=calcularChecksum(buffer);
+
         long t0 = System.currentTimeMillis(); // Tomar el tiempo antes de enviar los datos
 
         // Enviar datos al servidor
         toserver.write(buffer, 0, buffer.length);
+        toserver.write(checksum);
         toserver.flush();  // Asegurarse de que los datos se envíen
 
         // Recibir respuesta del servidor

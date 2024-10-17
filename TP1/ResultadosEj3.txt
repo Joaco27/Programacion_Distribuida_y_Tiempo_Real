@@ -1,125 +1,125 @@
 Iteración 10^1
+Tiempo en ms: 3
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 3
+Tiempo en ms: 2
 Tiempo en ms: 4
-Tiempo en ms: 3
-Tiempo en ms: 3
-Tiempo en ms: 2
-Tiempo en ms: 2
 Tiempo en ms: 2
 Tiempo en ms: 2
 Tiempo en ms: 3
 Tiempo en ms: 3
-Tiempo en ms: 2
-Tiempo en ms: 2
 Tiempo en ms: 3
 Tiempo en ms: 4
-Tiempo en ms: 3
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 2
+Tiempo en ms: 6
 Tiempo en ms: 2
 Tiempo en ms: 3
-Promedio de tiempo para 10^1: 2.55 ms
-La desviación estándar es: 0.888523
+Tiempo en ms: 2
+Promedio de tiempo para 10^1: 2.70 ms
+La desviación estándar es: 1.25656
 
 Iteración 10^2
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 3
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 3
-Tiempo en ms: 3
-Tiempo en ms: 3
 Tiempo en ms: 3
 Tiempo en ms: 2
 Tiempo en ms: 3
 Tiempo en ms: 2
 Tiempo en ms: 3
 Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
 Tiempo en ms: 3
 Tiempo en ms: 3
 Tiempo en ms: 2
 Tiempo en ms: 2
-Tiempo en ms: 3
-Promedio de tiempo para 10^2: 2.50 ms
-La desviación estándar es: 0.725476
+Tiempo en ms: 4
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 2
+Promedio de tiempo para 10^2: 2.35 ms
+La desviación estándar es: 0.688247
 
 Iteración 10^3
-Tiempo en ms: 2
-Tiempo en ms: 3
-Tiempo en ms: 2
+Tiempo en ms: 4
 Tiempo en ms: 2
 Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 3
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 2
+Tiempo en ms: 4
+Tiempo en ms: 4
 Tiempo en ms: 2
 Tiempo en ms: 2
 Tiempo en ms: 3
+Tiempo en ms: 3
+Tiempo en ms: 3
 Tiempo en ms: 2
-Tiempo en ms: 2
+Tiempo en ms: 6
 Tiempo en ms: 2
 Tiempo en ms: 3
 Tiempo en ms: 2
-Promedio de tiempo para 10^3: 2.20 ms
-La desviación estándar es: 0.458831
+Tiempo en ms: 3
+Tiempo en ms: 2
+Tiempo en ms: 3
+Tiempo en ms: 3
+Tiempo en ms: 2
+Promedio de tiempo para 10^3: 2.85 ms
+La desviación estándar es: 1.35724
 
 Iteración 10^4
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 3
-Tiempo en ms: 3
-Tiempo en ms: 2
-Tiempo en ms: 2
-Tiempo en ms: 2
+Tiempo en ms: 5
 Tiempo en ms: 2
 Tiempo en ms: 2
 Tiempo en ms: 3
 Tiempo en ms: 4
 Tiempo en ms: 2
 Tiempo en ms: 3
-Tiempo en ms: 2
+Tiempo en ms: 3
 Tiempo en ms: 2
 Tiempo en ms: 3
 Tiempo en ms: 3
+Tiempo en ms: 2
+Tiempo en ms: 2
+Tiempo en ms: 3
+Tiempo en ms: 2
+Tiempo en ms: 4
+Tiempo en ms: 4
 Tiempo en ms: 3
 Tiempo en ms: 2
 Tiempo en ms: 2
-Promedio de tiempo para 10^4: 2.45 ms
-La desviación estándar es: 0.760886
+Promedio de tiempo para 10^4: 2.80 ms
+La desviación estándar es: 1.21395
 
 Iteración 10^5
 Tiempo en ms: 5
 Tiempo en ms: 5
 Tiempo en ms: 5
+Tiempo en ms: 6
 Tiempo en ms: 5
+Tiempo en ms: 6
 Tiempo en ms: 5
+Tiempo en ms: 7
+Tiempo en ms: 7
+Tiempo en ms: 5
+Tiempo en ms: 6
+Tiempo en ms: 6
 Tiempo en ms: 6
 Tiempo en ms: 6
 Tiempo en ms: 7
-Tiempo en ms: 5
-Tiempo en ms: 5
-Tiempo en ms: 5
-Tiempo en ms: 5
-Tiempo en ms: 5
-Tiempo en ms: 5
 Tiempo en ms: 6
 Tiempo en ms: 6
+Tiempo en ms: 7
+Tiempo en ms: 11
 Tiempo en ms: 5
-Tiempo en ms: 5
-Tiempo en ms: 6
-Tiempo en ms: 5
-Promedio de tiempo para 10^5: 5.35 ms
-La desviación estándar es: 0.688247
+Promedio de tiempo para 10^5: 6.10 ms
+La desviación estándar es: 1.37649
 
-Promedio de tiempo para 10^1: 2.55 ms
-Promedio de tiempo para 10^2: 2.50 ms
-Promedio de tiempo para 10^3: 2.20 ms
-Promedio de tiempo para 10^4: 2.45 ms
-Promedio de tiempo para 10^5: 5.35 ms
+Promedio de tiempo para 10^1: 2.70 ms
+Promedio de tiempo para 10^2: 2.35 ms
+Promedio de tiempo para 10^3: 2.85 ms
+Promedio de tiempo para 10^4: 2.80 ms
+Promedio de tiempo para 10^5: 6.10 ms

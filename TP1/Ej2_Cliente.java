@@ -11,6 +11,14 @@
  
  public class Ej2_Cliente
  {
+
+  public static int calcularChecksum(byte[] data) {
+    int checksum = 0;
+    for (byte b : data) {
+        checksum += (b & 0xFF);
+    }
+    return checksum;
+}
    public static void main(String[] args) throws IOException
    {
      /* Verifica la cantidad de parámetros en la línea de comandos */
@@ -41,8 +49,6 @@
      fromserver = new DataInputStream(socketwithserver.getInputStream());
      toserver   = new DataOutputStream(socketwithserver.getOutputStream());
  
-     /* Buffer para usar en las comunicaciones (y su longitud) */
-     byte[] buffer;
      
      /* Obtener alguna entrada del usuario */
     //  Console console  = System.console();
@@ -50,27 +56,27 @@
 
 
     // Crear un string de x caracteres 'A' 
-    byte[] bytes = new byte[Integer.valueOf(args[2])];
-    for (int i = 0; i < bytes.length; i++) {
-        bytes[i] = 'A'; 
-    }
-    bytes[0] = 'F';
-    bytes[bytes.length - 1] = 'F';
+    byte[] buffer = new byte[Integer.valueOf(args[2])];
+    // Preparar el mensaje
+    for (int i = 0; i < buffer.length; i++) {
+      buffer[i] = 'A'; // El carácter 'A' en UTF-8 ocupa 1 byte
+  }
+    buffer[0] = 'F';
+    buffer[buffer.length - 1] = 'F';
 
-    // Convertir el array de bytes en un string
-    String mensaje = new String(bytes, "UTF-8");
-     /* Obtener los bytes... */
-     buffer = mensaje.getBytes();
+    int checksum=calcularChecksum(buffer);
  
      /* Enviar los datos leídos al servidor */
      toserver.write(buffer, 0, buffer.length);
+     toserver.writeInt(checksum);
+     toserver.flush();
      
      /* Recibir datos de vuelta del servidor (obtener espacio) */
      buffer = new byte[256];
      fromserver.read(buffer);
  
      /* Mostrar los datos recibidos del servidor */
-     String resp = new String(buffer);
+     //String resp = new String(buffer);
      //System.out.println(resp);
      
      fromserver.close();

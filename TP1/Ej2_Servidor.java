@@ -11,6 +11,14 @@
  
  public class Ej2_Servidor
  {
+
+  public static int calcularChecksum(byte[] data) {
+    int checksum = 0;
+    for (byte b : data) {
+        checksum += (b & 0xFF);
+    }
+    return checksum;
+}
    public static void main(String[] args) throws IOException
    {
      /* Verifica la cantidad de parámetros en la línea de comandos */
@@ -58,15 +66,24 @@
      buffer = new byte[Integer.valueOf(args[1])];
      
      /* Recibir datos del cliente */
-     int bytesRead = fromclient.read(buffer);
+     fromclient.read(buffer);
+
+     // Leer el checksum recibido
+     int checksumRecibido = fromclient.readInt();
+
+     // Calcular el checksum de los datos recibidos
+     int checksumCalculado = calcularChecksum(buffer);
  
      /* Convertir a cadena */
-     String str = new String(buffer, 0, bytesRead);
- 
-    //  System.out.println("Aqui esta el mensaje: " +  str);
-    System.out.println("El buffer pesa: " +  buffer.length);
-    System.out.println("El mensaje pesa: " +  str.getBytes().length);
-    System.out.println("El primer caracter es: " + str.charAt(0) + " y el ultimo: " + str.charAt(str.length() - 1) );
+     String str = new String(buffer);
+
+    boolean cumple = (str.charAt(0) == 'F' && str.charAt(str.length() - 1) == 'F'
+    && checksumCalculado==checksumRecibido);
+
+    System.out.println("El mensaje cumple con integridad y completitud: " + cumple);
+    System.out.println("Checksum calculado: "+checksumCalculado);
+    System.out.println("Checksum recibido: "+checksumRecibido);
+
 
  
      /* Cadena fija para el cliente */

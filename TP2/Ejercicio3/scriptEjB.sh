@@ -4,8 +4,8 @@
 server_ip=$(pwsh -Command "Get-NetIPAddress -InterfaceAlias 'Wi-Fi' -AddressFamily IPv4 | Select-Object -ExpandProperty IPAddress")
 client_ip="192.168.56.101"
 
-vagrant halt cliente
-sleep 10
+# vagrant halt cliente
+# sleep 10
 vagrant up cliente
 sleep 10
 

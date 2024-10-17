@@ -2,9 +2,9 @@
 
 PUERTO=8080
 LENGTH=10
-javac Ej3_Servidor.java
+javac ServidorModificado.java
 
-for i in {1..5}
+for i in {1..6}
 do
     for j in {1..10}
     do
@@ -15,7 +15,7 @@ do
 
         # Compilar y ejecutar el servidor Java
         echo "Ejecutando el servidor en el puerto $PUERTO..."
-        java Ej3_Servidor $PUERTO $LENGTH
+        java ServidorModificado $PUERTO $LENGTH
 
         # Cerrar el puerto después de que el servidor haya terminado
         # echo "Cerrando el puerto $PUERTO..."

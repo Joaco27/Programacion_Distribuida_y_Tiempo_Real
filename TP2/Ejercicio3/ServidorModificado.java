@@ -3,7 +3,15 @@ import java.io.*;
 import java.net.*;
 
 public class ServidorModificado {
-   public static void main(String[] args) throws IOException
+    // Calcular el checksum (suma de bytes)
+    public static int calcularChecksum(byte[] data) {
+      int checksum = 0;
+      for (byte b : data) {
+          checksum += (b & 0xFF);
+      }
+      return checksum;
+  }
+  public static void main(String[] args) throws IOException
    {
      /* Check the number of command line parameters */
      if (args.length != 2) {
@@ -51,9 +59,25 @@ public class ServidorModificado {
           totalBytesRead += bytesRead;
       }
 
-      // Preparar la respuesta
-      toclient.write(buffer, 0, buffer.length); // Enviar los mismos datos de vuelta
-      toclient.flush(); // Asegurar el envío
+      // Leer el checksum recibido
+      int checksumRecibido = fromclient.readInt();
+
+      // Calcular el checksum de los datos recibidos
+      int checksumCalculado = calcularChecksum(buffer);
+
+      // Verificar el checksum
+      if (checksumCalculado == checksumRecibido) {
+        // Preparar la respuesta
+        toclient.write(buffer, 0, buffer.length); // Enviar los mismos datos de vuelta
+        toclient.flush(); // Asegurar el envío
+      }
+      else{
+        String msj = "No se han recibido los datos correctamente";
+        buffer = msj.getBytes();
+        toclient.write(buffer, 0, buffer.length);
+
+      }
+      
     } catch (IOException e) {
       System.err.println("Error during communication");
     }

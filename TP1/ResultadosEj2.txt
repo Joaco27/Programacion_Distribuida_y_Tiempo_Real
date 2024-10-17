@@ -1,30 +1,30 @@
 Iteración 10^1
-El buffer pesa: 10
-El mensaje pesa: 10
-El primer caracter es: F y el ultimo: F
+El mensaje cumple con integridad y completitud: true
+Checksum calculado: 660
+Checksum recibido: 660
 
 Iteración 10^2
-El buffer pesa: 100
-El mensaje pesa: 100
-El primer caracter es: F y el ultimo: F
+El mensaje cumple con integridad y completitud: true
+Checksum calculado: 6510
+Checksum recibido: 6510
 
 Iteración 10^3
-El buffer pesa: 1000
-El mensaje pesa: 1000
-El primer caracter es: F y el ultimo: F
+El mensaje cumple con integridad y completitud: true
+Checksum calculado: 65010
+Checksum recibido: 65010
 
 Iteración 10^4
-El buffer pesa: 10000
-El mensaje pesa: 10000
-El primer caracter es: F y el ultimo: F
+El mensaje cumple con integridad y completitud: true
+Checksum calculado: 650010
+Checksum recibido: 650010
 
 Iteración 10^5
-El buffer pesa: 100000
-El mensaje pesa: 100000
-El primer caracter es: F y el ultimo: F
+El mensaje cumple con integridad y completitud: true
+Checksum calculado: 6500010
+Checksum recibido: 6500010
 
 Iteración 10^6
-El buffer pesa: 1000000
-El mensaje pesa: 131071
-El primer caracter es: F y el ultimo: A
+El mensaje cumple con integridad y completitud: false
+Checksum calculado: 8519620
+Checksum recibido: 1094795585
 
