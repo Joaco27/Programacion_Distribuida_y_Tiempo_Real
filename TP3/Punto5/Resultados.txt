@@ -1,0 +1,72 @@
+Tiempo para mensaje de 10 bytes: 8 ms
+Tiempo para mensaje de 10 bytes: 9 ms
+Tiempo para mensaje de 10 bytes: 9 ms
+Tiempo para mensaje de 10 bytes: 7 ms
+Tiempo para mensaje de 10 bytes: 21 ms
+Tiempo para mensaje de 10 bytes: 9 ms
+Tiempo para mensaje de 10 bytes: 9 ms
+Tiempo para mensaje de 10 bytes: 7 ms
+Tiempo para mensaje de 10 bytes: 8 ms
+Tiempo para mensaje de 10 bytes: 20 ms
+Desviación estándar de 10 es: 4.960846701924985
+Promedio de 10 bytes: 10.7 ms
+Tiempo para mensaje de 100 bytes: 8 ms
+Tiempo para mensaje de 100 bytes: 7 ms
+Tiempo para mensaje de 100 bytes: 8 ms
+Tiempo para mensaje de 100 bytes: 9 ms
+Tiempo para mensaje de 100 bytes: 7 ms
+Tiempo para mensaje de 100 bytes: 8 ms
+Tiempo para mensaje de 100 bytes: 8 ms
+Tiempo para mensaje de 100 bytes: 9 ms
+Tiempo para mensaje de 100 bytes: 7 ms
+Tiempo para mensaje de 100 bytes: 10 ms
+Desviación estándar de 100 es: 0.9433981132056604
+Promedio de 100 bytes: 8.1 ms
+Tiempo para mensaje de 1000 bytes: 35 ms
+Tiempo para mensaje de 1000 bytes: 12 ms
+Tiempo para mensaje de 1000 bytes: 10 ms
+Tiempo para mensaje de 1000 bytes: 10 ms
+Tiempo para mensaje de 1000 bytes: 13 ms
+Tiempo para mensaje de 1000 bytes: 8 ms
+Tiempo para mensaje de 1000 bytes: 10 ms
+Tiempo para mensaje de 1000 bytes: 9 ms
+Tiempo para mensaje de 1000 bytes: 7 ms
+Tiempo para mensaje de 1000 bytes: 8 ms
+Desviación estándar de 1000 es: 7.794870107962031
+Promedio de 1000 bytes: 12.2 ms
+Tiempo para mensaje de 10000 bytes: 9 ms
+Tiempo para mensaje de 10000 bytes: 9 ms
+Tiempo para mensaje de 10000 bytes: 6 ms
+Tiempo para mensaje de 10000 bytes: 9 ms
+Tiempo para mensaje de 10000 bytes: 7 ms
+Tiempo para mensaje de 10000 bytes: 7 ms
+Tiempo para mensaje de 10000 bytes: 6 ms
+Tiempo para mensaje de 10000 bytes: 9 ms
+Tiempo para mensaje de 10000 bytes: 6 ms
+Tiempo para mensaje de 10000 bytes: 8 ms
+Desviación estándar de 10000 es: 1.2806248474865698
+Promedio de 10000 bytes: 7.6 ms
+Tiempo para mensaje de 100000 bytes: 12 ms
+Tiempo para mensaje de 100000 bytes: 11 ms
+Tiempo para mensaje de 100000 bytes: 9 ms
+Tiempo para mensaje de 100000 bytes: 9 ms
+Tiempo para mensaje de 100000 bytes: 13 ms
+Tiempo para mensaje de 100000 bytes: 7 ms
+Tiempo para mensaje de 100000 bytes: 9 ms
+Tiempo para mensaje de 100000 bytes: 8 ms
+Tiempo para mensaje de 100000 bytes: 9 ms
+Tiempo para mensaje de 100000 bytes: 9 ms
+Desviación estándar de 100000 es: 1.7435595774162693
+Promedio de 100000 bytes: 9.6 ms
+Tiempo para mensaje de 1000000 bytes: 32 ms
+Tiempo para mensaje de 1000000 bytes: 24 ms
+Tiempo para mensaje de 1000000 bytes: 24 ms
+Tiempo para mensaje de 1000000 bytes: 23 ms
+Tiempo para mensaje de 1000000 bytes: 25 ms
+Tiempo para mensaje de 1000000 bytes: 20 ms
+Tiempo para mensaje de 1000000 bytes: 30 ms
+Tiempo para mensaje de 1000000 bytes: 36 ms
+Tiempo para mensaje de 1000000 bytes: 19 ms
+Tiempo para mensaje de 1000000 bytes: 13 ms
+Desviación estándar de 1000000 es: 6.359245238233858
+Promedio de 1000000 bytes: 24.6 ms

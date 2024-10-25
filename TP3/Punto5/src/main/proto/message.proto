@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package app.pdytr;
+
+option java_package = "app.pdytr";
+option java_outer_classname = "MessageProto";  
+
+message MessageResponse {  
+    string result = 1;  
+}
+
+message MessageRequest {  
+    string message = 1; 
+}
+
+service Punto5Service {
+    rpc Measure (MessageRequest) returns (MessageResponse);  
+}
