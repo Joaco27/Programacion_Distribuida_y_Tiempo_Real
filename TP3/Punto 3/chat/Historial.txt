@@ -1,0 +1,15 @@
+Ziplocata se unio al chat
+Juanarda se unio al chat
+Joaco27 se unio al chat
+Rubianito se unio al chat
+Rafafafa se unio al chat
+[ 24-10-2024 17:57:10 ] Joaco27: Hola, soy Joaco27
+[ 24-10-2024 17:57:10 ] Rubianito: Hola, soy Rubianito
+[ 24-10-2024 17:57:10 ] Ziplocata: Hola, soy Ziplocata
+[ 24-10-2024 17:57:10 ] Juanarda: Hola, soy Juanarda
+[ 24-10-2024 17:57:10 ] Rafafafa: Hola, soy Rafafafa
+Rubianito salio del chat
+Ziplocata salio del chat
+Joaco27 salio del chat
+Juanarda salio del chat
+Rafafafa salio del chat

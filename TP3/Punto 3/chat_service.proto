@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+package app.pdytr;
+
+import "google/protobuf/timestamp.proto";
+
+option java_package = "app.pdytr";
+option java_outer_classname = "ChatServiceProto";
+
+message Message {
+  string user = 1;
+  string content = 2;
+  google.protobuf.Timestamp timestamp = 3;
+}
+
+message User {
+  id = 1;
+  name = 2;
+}
+
+message ConnectRequest {
+  string name = 1;
+}
+
+message ConnectResponse {
+  string name = 1;
+  string welcome = 2;
+}
+
+message DisconnectRequest {
+  string name = 1;
+}
+
+message DisconnectResponse {
+  string name = 1;
+  string goodbye = 2;
+}
+
+message SendMessageRequest {
+  string name = 1;
+}
+
+message SendMessageResponse {
+  string name = 1;
+  string content = 2;
+}
+
+message GetMessagesRequest {
+  int64 lastMessageTimestamp = 1;
+}
+
+message GetMessagesResponse {
+  repeated Message newMessages = 1;
+}
+
+message HistoryRequest {}
+
+message HistoryResponse {
+  repeated Message messages = 1;
+}
+
+service ChatService {
+  rpc Connect(ConnectRequest) returns (ConnectResponse);
+  rpc Disconnect(DisconnectRequest) returns (DisconnectResponse);
+  rpc History(HistoryRequest) returns (HistoryResponse);
+  rpc GetMessages (GetMessagesRequest) returns (GetMessagesResponse);
+}
