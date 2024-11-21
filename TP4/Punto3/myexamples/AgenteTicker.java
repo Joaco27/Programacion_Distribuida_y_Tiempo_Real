@@ -1,8 +1,13 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
 import jade.core.Agent;
 import jade.core.ContainerID;
 import jade.core.behaviours.TickerBehaviour;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
+import jade.wrapper.StaleProxyException;
 
 public class AgenteTicker extends Agent {
 	private long startTime;
@@ -23,42 +28,49 @@ public class AgenteTicker extends Agent {
             }
         }
 
-        addBehaviour(new TickerBehaviour(this, 10000) { // Cada 10 segundos
+    	addBehaviour(new TickerBehaviour(this, 10000) { // Cada 10 segundos
             @Override
             protected void onTick() {
-                TickerBehaviour tickerInterno = new TickerBehaviour(myAgent, 2000) { // Cada 2 segundos
-                    private int segundos = 0;
-                    
-                    if (!enEjecucion) {
-                        enEjecucion = true; // Indicar que se está ejecutando una ronda
-                        startTime = System.currentTimeMillis();
-                        agentesTerminados.clear(); // Reiniciar el registro de finalización
+                startTime = System.currentTimeMillis();
 
-                        // Mover a los AgentesB a nuevos contenedores
-                        for (int i = 0; i < agentesB.length; i++) {
-                            try {
-                                agentesB[i].move(contenedores[(i + 1) % 5].getContainerID());
-                            } catch (StaleProxyException e) {
-                                e.printStackTrace();
-                            }
-                        }
+                try {
+                    for (AgentController agenteB : agentes) {
+                        agenteB.move(new jade.core.ContainerID("Main-Container", null));
                     }
+                } catch (StaleProxyException e) {
+                    e.printStackTrace();
+                }
 
+                addBehaviour(new TickerBehaviour(myAgent, 1000) { // Cada 1 segundo
                     @Override
                     protected void onTick() {
-                        segundos++;
 
-                        // Detener el ticker interno después de 5 ejecuciones
-                        if (segundos == 5) {
+                        if (verificarResultados(5)) {
+                            long endTime = System.currentTimeMillis();
+                            System.out.println("Todos los agentes han terminado. Tiempo total: " + (endTime - startTime) + " ms");
+
                             stop();
-                            System.out.println("   Ticker interno detenido.");
                         }
                     }
-                };
-
-                // Agregar el ticker interno al agente
-                myAgent.addBehaviour(tickerInterno);
+                });
             }
         });
     }
+    
+    private boolean verificarResultados(int cantidadAgentes) {
+        int lineasLeidas = 0;
+
+        try (BufferedReader reader = new BufferedReader(new FileReader("resultados.txt"))) {
+            String linea;
+            while ((linea = reader.readLine()) != null) {
+                lineasLeidas++;
+                System.out.println("Resultado recibido: " + linea);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return lineasLeidas==cantidadAgentes;
+    }
+
 }

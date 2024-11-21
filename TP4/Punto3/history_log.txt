@@ -1,0 +1,18 @@
+AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+Finalizo Ronda 0. Tiempo total: 1012 ms
+AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+Finalizo Ronda 1. Tiempo total: 1004 ms
+AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+Finalizo Ronda 2. Tiempo total: 1008 ms
+AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+Finalizo Ronda 3. Tiempo total: 1014 ms
+AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+Finalizo Ronda 4. Tiempo total: 1012 ms
+AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+Finalizo Ronda 5. Tiempo total: 1010 ms
+AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+Finalizo Ronda 6. Tiempo total: 1013 ms
+AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+Finalizo Ronda 7. Tiempo total: 1007 ms
+AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+Finalizo Ronda 8. Tiempo total: 1014 ms

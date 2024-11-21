@@ -1,5 +1,5 @@
-Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
-Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
-Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
-Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
-Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+AgenteB_1: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+AgenteB_2: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+AgenteB_3: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+AgenteB_4: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968
+AgenteB_0: Nombre PC: DESKTOP-SLC9EQP, Carga: -1.0, Memoria: 123731968

@@ -1,74 +1,124 @@
 import jade.core.Agent;
 import jade.core.ContainerID;
+import jade.core.Profile;
+import jade.core.ProfileImpl;
 import jade.core.behaviours.TickerBehaviour;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import jade.wrapper.StaleProxyException;
+import jade.core.Runtime;
 
 import java.io.*;
 
 public class AgenteA extends Agent {
     private long startTime;
-    private AgentController [] agentes = new AgentController[5];
-    private ContainerID contenedorDestino = new ContainerID("Main-Container", null); 
-    private ContainerController contenedorActual = getContainerController();
-
+    private final int cantAgentes = 5;
+    private AgentController[] agentes = new AgentController[cantAgentes];
+    private boolean finRonda = true;
+    private int ronda = 0;
 
     @Override
     protected void setup() {
-
-        for (int i=0; i<5; i++) {
-            try {
-                agentes[i] = contenedorActual.createNewAgent("AgenteB_" + i, "AgenteB", null);
-                agentes[i].start();
-            } catch (Exception e) {
-                e.printStackTrace();
+        try {
+            // Crear contenedores
+            ContainerController[] contenedores = new ContainerController[cantAgentes];
+            for (int i = 0; i < cantAgentes; i++) {
+                Profile profile = new ProfileImpl();
+                profile.setParameter(Profile.MAIN_HOST, "localhost");
+                profile.setParameter(Profile.CONTAINER_NAME, "Container" + i);
+                contenedores[i] = Runtime.instance().createAgentContainer(profile); 
             }
+
+            // Crear agentes
+            for (int i = 0; i < cantAgentes; i++) {
+                agentes[i] = getContainerController().createNewAgent("AgenteB_" + i, "AgenteB", null);
+                agentes[i].start();
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
-        // Iniciar recopilación periódica con un TickerBehaviour
-        addBehaviour(new TickerBehaviour(this, 6000) { // Cada 6 segundos
+        // Ticker para mover agentes y medir tiempos
+        addBehaviour(new TickerBehaviour(this, 10000) { // Cada 10 segundos
             @Override
             protected void onTick() {
-                startTime = System.currentTimeMillis();
+                if (finRonda) {
+                    finRonda = false; // Marcar el inicio de una nueva ronda
+                    limpiarArchivo();
+                    startTime = System.currentTimeMillis();
 
-                // Limpiar archivo de resultados
-                limpiarArchivo("resultados.txt");
-
-               for (int i=0; i<5; i++) {
+                    // Mover agentes a sus respectivos contenedores
                     try {
-						agentes[i].move(contenedorDestino);
-					} catch (StaleProxyException e) {
-						e.printStackTrace();
-					}
+                        for (int i = 0; i < cantAgentes; i++) {
+                            ContainerID destino = new ContainerID("Container" + i, null);
+                            agentes[i].move(destino);
+                        }
+                    } catch (StaleProxyException e) {
+                        e.printStackTrace();
+                    }
+
+                    // Agregar Ticker para verificar resultados
+                    addBehaviour(new TickerBehaviour(myAgent, 1000) { // Cada 1 segundo
+                        @Override
+                        protected void onTick() {
+                            if (verificarResultados()) {
+                                long endTime = System.currentTimeMillis();
+                                String resultado = "Finalizo Ronda " + ronda++ + ". Tiempo total: " + (endTime - startTime) + " ms";
+                                System.out.println(resultado);
+                                finRonda = true;
+                                escribirArchivo(resultado);
+                                stop();
+                            }
+                        }
+                    });
                 }
-
-                
-
-                verificarResultados();
             }
         });
     }
 
-    private void limpiarArchivo(String archivo) {
-        try (PrintWriter writer = new PrintWriter(new File(archivo))) {
-            writer.print("");
+    private void limpiarArchivo() {
+        try (PrintWriter writer = new PrintWriter(new File("resultados.txt"))) {
+            writer.print(""); // Limpiar archivo
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private void verificarResultados() {
+    private boolean verificarResultados() {
+        int lineasLeidas = 0;
         try (BufferedReader reader = new BufferedReader(new FileReader("resultados.txt"))) {
             String linea;
             while ((linea = reader.readLine()) != null) {
-                System.out.println("Resultado recibido: " + linea);
+                lineasLeidas++;
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        long endTime = System.currentTimeMillis();
-        System.out.println("Tiempo total de recopilación: " + (endTime - startTime) + " ms");
+        return lineasLeidas == cantAgentes;
+    }
+    
+    private String contenidoResult() {
+    	String lineasLeidas="";
+    	try (BufferedReader reader = new BufferedReader(new FileReader("resultados.txt"))) {
+            String linea;
+            while ((linea = reader.readLine()) != null) {
+                lineasLeidas+=linea+"\n";
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    	
+    	return lineasLeidas;
+    }
+    
+    private  void escribirArchivo(String datos) {
+        try (FileWriter writer = new FileWriter("history_log.txt", true)) {
+        	writer.write(contenidoResult() + "\n");
+            writer.write(datos + "\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
